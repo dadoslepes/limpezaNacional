@@ -3,7 +3,7 @@ Type: Package
 Title: Limpeza dos dados do Nacional
 Version: 0.1.0
 Author: Equipe de dados
-Maintainer: Araê Cainã
+Maintainer: Araê Cainã <araecaina@hotmail.com>
 Description: Limpa a base que vem em JSON
 License: MIT
 Encoding: UTF-8
