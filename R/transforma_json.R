@@ -14,7 +14,7 @@ transforma_json <- function(
   convertList = T
 ){
   # Lê a base de dados
-  json_data <- stream_in(
+  json_data <- jsonlite::stream_in(
     file(
       path
     )

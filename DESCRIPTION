@@ -1,9 +1,9 @@
 Package: limpezaNacional
 Type: Package
 Title: Limpeza dos dados do Nacional
-Version: 0.1.0
+Version: 0.2.0
 Author: Equipe de dados
-Maintainer: Araê Cainã <araecaina@hotmail.com>
+Maintainer: Arthur Dechechi <dados.lepes@usp.br>
 Description: Limpa a base que vem em JSON
 License: MIT
 Encoding: UTF-8
@@ -13,4 +13,7 @@ Depends:
   stringr (>= 1.4.0),
   tidyverse (>= 1.3.0),
   dplyr (>= 1.0.2)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.1
+Imports: 
+    fastDummies,
+    magrittr

@@ -1,10 +1,6 @@
 #' Resolve questões que vem dentro de um vetor
 #'
 #' Essa função resolve problemas com as colunas que vem dentro de um vetor
-#'
-#'
-#'
-#'
 #' @param base base de dados
 #' @param questoes Colunas que contém as informações com problema
 #' @return Dataframe corrigido

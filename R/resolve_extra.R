@@ -1,10 +1,6 @@
 #' Resolve questões extras com problema
 #'
 #' Transforma as informações respondidas nas questões extras em um vetor de texto
-#'
-#'
-#'
-#'
 #' @param base base de dados
 #' @param extras Colunas que contém as informações com problema
 #' @return Dataframe corrigido
@@ -23,13 +19,13 @@ resolve_extra <- function(
       extraIntermediaria <- strsplit(extraOriginal[i], split = "extraAnswer")
       extraIntermediaria <- extraIntermediaria[[1]][2]
       extraOriginal[i] <- extraIntermediaria %>%
-        str_remove_all(fixed("= c(")) %>%
-        str_remove_all(fixed(" NA")) %>%
-        str_remove_all(fixed(")")) %>%
-        str_remove_all(fixed("\\n")) %>%
-        str_remove_all(fixed(",")) %>%
-        str_remove_all(fixed('"')) %>%
-        str_trim()
+        stringr::str_remove_all(fixed("= c(")) %>%
+        stringr::str_remove_all(fixed(" NA")) %>%
+        stringr::str_remove_all(fixed(")")) %>%
+        stringr::str_remove_all(fixed("\\n")) %>%
+        stringr::str_remove_all(fixed(",")) %>%
+        stringr::str_remove_all(fixed('"')) %>%
+        stringr::str_trim()
     }
 
     base[,extras[extra]] <- extraOriginal
